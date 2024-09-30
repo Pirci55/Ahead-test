@@ -1,0 +1,44 @@
+main {
+    .stats {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 3rem;
+
+        div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            p {
+                margin: 1rem;
+                font-size: 2rem;
+            }
+        }
+    }
+
+    .cages {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        padding: 0 1rem;
+        gap: 1rem;
+
+        .cage {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background: #00000025;
+            padding: 1rem;
+            border-radius: 25px;
+
+            &:hover {
+                background: #00000050;
+            }
+
+            p {
+                margin: 0.2rem;
+                font-size: 1.2rem;
+            }
+        }
+    }
+}

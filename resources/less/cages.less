@@ -1,0 +1,133 @@
+main {
+    section {
+        .cage {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 1rem;
+
+            div {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                p {
+                    margin: 0.1rem;
+                    font-size: 1.5rem;
+                }
+
+                label {
+                    margin: 0.2rem;
+                    font-size: 1.1rem;
+                }
+
+                input {
+                    margin: 0.1rem;
+                    padding: 0.2rem 0.4rem;
+                    font-size: 1.2rem;
+                    border-radius: 10px;
+                    background: #00000025;
+
+                    &:hover {
+                        background: #00000080;
+                    }
+                }
+
+                #cage_id {
+                    background: #00000015;
+                    color: rgb(60, 60, 60);
+                }
+
+            }
+
+            .buttons {
+                margin: 1rem;
+
+                input {
+                    margin: 0.4rem;
+                    padding: 0.4rem 0.6rem;
+                    background: #00000025;
+                }
+            }
+        }
+
+        .set_cage {
+            display: flex;
+            justify-content: center;
+            margin: 1rem;
+
+            form {
+                display: flex;
+                flex-direction: column;
+
+                select,
+                input {
+                    margin: 0.4rem;
+                    padding: 0.4rem 0.6rem;
+                    font-size: 1.1rem;
+                    border-radius: 10px;
+                    background: #00000025;
+
+                    &:hover {
+                        background: #00000080;
+                    }
+                }
+            }
+        }
+
+        .animals {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            padding: 0 1rem;
+            gap: 1rem;
+
+            .animal {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                background: #00000025;
+                padding: 1rem;
+                border-radius: 25px;
+
+                .stats {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+
+                    p {
+                        margin: 0.2rem;
+                        font-size: 1.1rem;
+                    }
+                }
+
+                .buttons {
+                    width: 100%;
+                    margin-top: 1rem;
+                    display: grid;
+                    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+                    gap: 1rem;
+
+                    a,
+                    input {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        padding: 0.4rem 0.6rem;
+                        background: #00000025;
+                        border-radius: 15px;
+
+                        &:hover {
+                            background: #00000050;
+                        }
+                    }
+
+                    input {
+                        width: 100%;
+                        white-space: normal;
+                    }
+                }
+            }
+        }
+    }
+}

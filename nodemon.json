@@ -1,0 +1,8 @@
+{
+    "watch": [
+        "resources/less"
+    ],
+    "ext": "less",
+    "ignore": [],
+    "exec": "npm run build"
+}
